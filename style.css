@@ -1,0 +1,56 @@
+/* pos */
+.overlay {
+    position: absolute;
+    margin: 1em;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* SETTINGS */
+:root {
+    --color-off-white: #f3f4f4;
+    --color-stroke: #dadce0;
+    --font-mono: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.demo>* {
+    padding: 1em;
+    display: grid;
+    place-items: end;
+}
+
+.demo>*+* {
+    /* opacity: 0.75; */
+    box-shadow: 0 -1px 10px rgba(0 0 0 / 60%);
+}
+
+.demo> :first-child {
+    background: aliceblue;
+    border: 2px solid lightblue;
+}
+
+.demo> :nth-child(2) {
+    background: pink;
+    border: 2px solid hotpink;
+}
+
+.demo> :last-child {
+    background: wheat;
+    border: 2px solid gold;
+}
+
+code {
+    padding: 0.125em 0.25em;
+    background: var(--color-off-white);
+    border: 1px solid var(--color-stroke);
+    font-family: var(--font-mono);
+    font-size: 1.25em;
+    hyphens: none;
+    tab-size: 2;
+    text-align: left;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+}
